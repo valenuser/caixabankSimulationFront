@@ -7,7 +7,7 @@
         </div>
         <div class="bg-[#008ECF] w-[100%] h-[90vh]">
             <div class="flex flex-col items-center justify-around bg-[#008ECF] w-[100%] h-[50vh]">
-                <p class="text-white text-4xl">Buenas noches</p>
+                <p class="text-white text-4xl">{{ date }}</p>
                 <div class="flex items-center justify-around w-[80%]">
                     <i class="fa-solid fa-user text-[25px] text-white mr-5"></i>
                     <input type="text" placeholder="Username" class="border-b-2 border-white outline-none w-[300px] text-white bg-transparent placeholder-white" maxlength="10">
@@ -27,6 +27,17 @@
 </template>
 <script>
 export default{
+    computed:{
+        date(){
+            if(new Date().getHours() > 6 && new Date().getHours() < 14){
+                return 'Buenos dias'
+            }else if(new Date().getHours() > 14 && new Date().getHours() < 19){
+                return 'Buenas tardes'
+            }else{
+                return 'Buenas noches'
+            }
+        }
+    },
     methods:{
         login(){
             this.$router.push({name:'main'})

@@ -13,9 +13,9 @@
             <div class="bg-[#008ECF] w-[100%] h-[70vh] z-0"></div>
             <div class=" w-[100%] h-[55vh] z-0 "></div>
         </div>
-        <div class="w-[100%] h-[65vh]  flex flex-col justify-around">
-            <div class="flex flex-col">
-                <h1 class="font-bold">Ultimos bizums enviados:</h1>
+        <div class="w-[100%] h-[70vh]  flex flex-col justify-around">
+            <div class="flex flex-col text-center">
+                <h1 class="font-bold">Ultimos bizums enviados</h1>
                 <div class="w-[100%] h-[20vh] flex flex-col items-center justify-around">
                     <div class="flex justify-around border w-[350px] h-[50px] items-center rounded">
                         <p class="text-[18px] ">01/01/24</p>
@@ -29,8 +29,8 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col">
-                <h1 class="font-bold">Ultimos bizums recibidos:</h1>
+            <div class="flex flex-col text-center">
+                <h1 class="font-bold">Ultimos bizums recibidos</h1>
                 <div class="w-[100%] h-[20vh] flex flex-col items-center justify-around">
                     <div class="flex justify-around border w-[350px] h-[50px] items-center rounded">
                         <p class="text-[18px] ">01/01/24</p>
